@@ -51,7 +51,6 @@ public class QuickCoordinates implements ModInitializer {
 			@Override
 			public void onHudRender(MatrixStack matrixStack, float tickDelta) {
 				
-				
 				if (showCords.isPressed()) {
 					minecraft.getTextureManager().bindTexture(new Identifier("quickcoordinates", "textures/gui/quickcoordinates.png"));
 					DrawableHelper.drawTexture(matrixStack, screenposX, screenposY, 0, 0, 185, 46, 185, 46);
@@ -62,7 +61,6 @@ public class QuickCoordinates implements ModInitializer {
 					minecraft.textRenderer.draw(matrixStack, String.format("Biome: §3%s ", biome.toString().replace(biome.getNamespace() + ":", "").replace("_", " ")) , screenposX + 11, screenposY + 19, 0x35c461);
 					minecraft.textRenderer.draw(matrixStack, String.format("Facing: §3%s", minecraft.player.getHorizontalFacing()) , screenposX + 11, screenposY + 29, 0x35c461);
 					}
-				
 			}
 		});
 	}
