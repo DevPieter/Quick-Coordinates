@@ -9,11 +9,11 @@
 
 # About
 
-Better Name Tags is a free and open-source Fabric mod.
+Quick Coordinates helps you easily see your coordinates, which direction you are facing, and which biome you are in.
 
-Better Name Tags adds more info to the player's name tag, such as their ❤ health and ↔ distance removed from you.
+Press and hold the key binding (c by default) to display the info in the top left corner.
 
-<img src="https://github.com/DevPieter/Better-Name-Tags/raw/master/img/name-tag.PNG"/>
+<img src="https://github.com/DevPieter/Quick-Coordinates/raw/main/img/img.png"/>
 
 
 <br>
@@ -28,5 +28,5 @@ Better Name Tags adds more info to the player's name tag, such as their ❤ heal
 <img src="https://img.shields.io/static/v1?label=Minecraft&message=1.16.4&color=success" alt="Minecraft"/>
 <img src="https://img.shields.io/static/v1?label=Minecraft&message=1.16.5&color=success" alt="Minecraft"/>
 <br> <br> <br>
-<img src="https://github.com/DevPieter/Better-Name-Tags/raw/master/img/icon.png" alt="Inco"/>
+<img src="https://github.com/DevPieter/Quick-Coordinates/raw/main/img/icon.png" alt="Inco"/>
 </p>
