@@ -1,0 +1,35 @@
+{
+    "schemaVersion": 1,
+    "id": "quickcoordinates",
+    "version": "1.0.0",
+
+    "name": "Quick Coordinates",
+    "description": "Quick Coordinates helps you easily see your coordinates, which direction you are facing, and which biome you are in.\nPress and hold the key binding (c by default) to display the info in the top left corner.",
+    "authors": [
+        "DevPieter"
+    ],
+    "contact": {
+        "homepage": "http://devpieter.nl/",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+
+    "license": "CC0-1.0",
+    "icon": "assets/quickcoordinates/icon.png",
+
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "nl.devpieter.quickcoordinates.QuickCoordinates"
+        ]
+    },
+    "mixins": [],
+
+    "depends": {
+        "fabricloader": ">=0.7.4",
+        "fabric": "*",
+        "minecraft": "1.16.x"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}
