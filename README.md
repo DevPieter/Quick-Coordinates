@@ -10,8 +10,7 @@
 # About
 
 Quick Coordinates helps you easily see your coordinates, which direction you are facing, and which biome you are in.
-
-Press and hold the key binding (c by default) to display the info in the top left corner.
+Press and hold the keybinding (c by default) to display the info in the top left corner.
 
 <img src="https://github.com/DevPieter/Quick-Coordinates/raw/main/img/img.png"/>
 
