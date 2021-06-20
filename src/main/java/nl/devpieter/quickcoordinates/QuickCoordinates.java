@@ -7,7 +7,7 @@
 *    /_____/  \___/ |___/  /_/      /_/   \___/ \__/  \___/ /_/
 *   
 *                    This mod was created by DevPieter
-*                              © DevPieter
+*                              ï¿½ DevPieter
 *
 *      DevPieter.nl    github.com/DevPieter    twitter.com/DevPieter
 * #######################################################################
@@ -16,6 +16,8 @@
 package nl.devpieter.quickcoordinates;
 
 import java.text.DecimalFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import org.lwjgl.glfw.GLFW;
 
@@ -49,20 +51,20 @@ public class QuickCoordinates implements ModInitializer {
 		HudRenderCallback.EVENT.register(new HudRenderCallback() {
 
 			@Override
-			public void onHudRender(MatrixStack matrixStack, float tickDelta) {
+			public void onHudRender(MatrixStack matrixStack, float tickDelta) {				
 				
 				if (showCords.isPressed()) {
 					minecraft.getTextureManager().bindTexture(new Identifier("quickcoordinates", "textures/gui/quickcoordinates.png"));
 					DrawableHelper.drawTexture(matrixStack, screenposX, screenposY, 0, 0, 185, 46, 185, 46);
 
 					Identifier biome = minecraft.player.world.getRegistryManager().get(Registry.BIOME_KEY).getId(minecraft.player.world.getBiome(minecraft.player.getBlockPos()));
-										
+					
 					minecraft.textRenderer.draw(matrixStack, String.format("Block: \u00A73%s %s %s", df.format(minecraft.player.getPos().x), df.format(minecraft.player.getPos().y), df.format(minecraft.player.getPos().z)), screenposX + 11, screenposY + 9, 0x35c461);
 					minecraft.textRenderer.draw(matrixStack, String.format("Biome: \u00A73%s ", biome.toString().replace(biome.getNamespace() + ":", "").replace("_", " ")) , screenposX + 11, screenposY + 19, 0x35c461);
-					minecraft.textRenderer.draw(matrixStack, String.format("Facing: \u00A73%s", minecraft.player.getHorizontalFacing()) , screenposX + 11, screenposY + 29, 0x35c461);
-					}
+					minecraft.textRenderer.draw(matrixStack, String.format("Facing: \u00A73%s", minecraft.player.getHorizontalFacing()) , screenposX + 11, screenposY + 29, 0x35c461);					
+				}
 			}
-		});
+		});		
 	}
 	
 }
