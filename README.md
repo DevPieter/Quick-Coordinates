@@ -1,3 +1,5 @@
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K05621Y)
+<br>
 # Quick Coordinates (for Fabric)
 
 <p align="center">
